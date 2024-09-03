@@ -31,3 +31,34 @@ body {
     text-wrap: balance;
   }
 }
+
+@keyframes phases {
+  0%, 100% { clip-path: circle(50% at 50% 50%); }
+  25% { clip-path: ellipse(50% 100% at 0% 50%); }
+  50% { clip-path: circle(50% at 50% 50%); }
+  75% { clip-path: ellipse(50% 100% at 100% 50%); }
+}
+
+.animate-phases {
+  animation: phases 8s infinite;
+}
+
+.clip-phase1 {
+  clip-path: ellipse(50% 100% at 0% 50%);
+  animation: phases 8s infinite;
+}
+
+.clip-phase2 {
+  clip-path: ellipse(50% 100% at 100% 50%);
+  animation: phases 8s infinite;
+}
+
+.clip-phase3 {
+  clip-path: circle(50% at 50% 50%);
+  animation: phases 8s infinite;
+}
+
+.clip-phase4 {
+  clip-path: ellipse(50% 100% at 100% 50%);
+  animation: phases 8s infinite;
+}
