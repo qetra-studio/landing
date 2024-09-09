@@ -1,10 +1,7 @@
-'use client'
-import ScrollableMoonsView from "@/client/ScrollableMoonsView";
-
-
+import ScrollableMoonsView from "@/app/client/ScrollableMoonsView";
 
 function Page() {
-    return <main className='h-screen overflow-y-auto'>
+    return <main className='h-full w-full overflow-y-auto'>
         <ScrollableMoonsView>
             <div
                 className='bg-blue-300 m-12 relative'
@@ -15,6 +12,9 @@ function Page() {
 
             <div style={{height: '2000px'}}>
                 <p>Scroll down to see the progress...</p>
+            </div>
+            <div>
+                endd
             </div>
         </ScrollableMoonsView>
     </main>

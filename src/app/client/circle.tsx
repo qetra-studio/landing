@@ -1,5 +1,3 @@
-'use client'
-
 import clsx from "clsx";
 
 interface Props {
@@ -7,7 +5,7 @@ interface Props {
 }
 
 export default function Circle({visible}: Props) {
-    return <div className={clsx('rounded-full w-2 h-2 bg-white', {
-        'hidden': !visible
+    return <div className={clsx('rounded-full w-1 h-1', {
+        'bg-white': visible
     })} />
 }
