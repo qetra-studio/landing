@@ -5,8 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Moons Next.js Template",
-  description: "Created by Moons software",
+  title: "Qetra",
+  description: "Home page of Qetra.",
 };
 
 export default function RootLayout({
