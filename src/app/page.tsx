@@ -14,10 +14,10 @@ export default function Home() {
                     <div className='font-semibold text-center text-6xl'>
                         Hi, we are Qetra.
                     </div>
-                    <div className='font-semibold flex-grow text-center text-6xl w-4/5'>
+                    <div className='font-semibold flex-grow text-center text-6xl w-2/3 md:w-4/5'>
                         We prioritize <span className='text-qetra-success'>excellence over cost</span>,
-                        <br/>making us the right partner for those
-                        <br/>value <SuccessBadgeText>HIGH STANDARDS</SuccessBadgeText> and <SuccessBadgeText>LONG-TERM SUCCESS</SuccessBadgeText>.
+                        making us the right partner for those
+                        value <SuccessBadgeText>HIGH STANDARDS</SuccessBadgeText> and <SuccessBadgeText>LONG-TERM SUCCESS</SuccessBadgeText>.
                     </div>
                     <div className='flex-grow'>
                     <Image priority src='svg/scroll.svg' width={192} height={192} alt='ask-scroll-icon'/>
