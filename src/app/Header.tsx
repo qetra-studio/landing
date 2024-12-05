@@ -1,6 +1,4 @@
-'use client';
 import QetraLogo from "@/components/meta/QetraLogo";
-import {useLayoutEffect} from "react";
 
 function NavigationBar() {
     return <div className='flex flex-row gap-8 text-qetra-secondary'>
