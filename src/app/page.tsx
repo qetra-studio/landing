@@ -10,11 +10,11 @@ export default function Home() {
                     className='flex justify-center items-center h-full w-full py-12 absolute inset-0 -z-50'> {/* background */}
                     <QetraLogo className={'fill-current text-[#24222A] h-full w-full'}/>
                 </div>
-                <div className='flex flex-col justify-stretch items-center h-full pt-12 md:pt-34 gap-20'>
+                <div className='flex flex-col justify-stretch items-center h-full pt-12 md:pt-34 gap-16'>
                     <div className='font-semibold text-center text-6xl'>
                         Hi, we are Qetra.
                     </div>
-                    <div className='font-semibold flex-grow text-center text-6xl w-2/3 md:w-4/5'>
+                    <div className='font-semibold flex-grow text-center text-6xl  md:w-4/5'>
                         We prioritize <span className='text-qetra-success'>excellence over cost</span>,
                         making us the right partner for those
                         value <SuccessBadgeText>HIGH STANDARDS</SuccessBadgeText> and <SuccessBadgeText>LONG-TERM SUCCESS</SuccessBadgeText>.

@@ -6,7 +6,7 @@ interface SuccessBadgeTextProps {
 
 export default function SuccessBadgeText({className, children}: PropsWithChildren<SuccessBadgeTextProps>) {
     return <span
-        className={`${className} bg-qetra-success text-black border-qetra-success-border border-2 rounded-full text-center text-xl p-3 align-middle`}>
+        className={`${className}  bg-qetra-success text-black border-qetra-success-border border-2 rounded-full text-center text-xl p-3 align-middle text-nowrap`}>
                 {children}
             </span>
 }
