@@ -14,7 +14,9 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       colors: {
-        'qetra-secondary': '#D9D9D9'
+        'qetra-secondary': '#D9D9D9',
+        'qetra-success': '#C3E600',
+        'qetra-success-border': '#D1FF03'
       },
       padding: {
         '34': '136px'
