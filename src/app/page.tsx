@@ -1,27 +1,85 @@
+import LabeledCard from "@/components/cards/LabeledCard";
 import QetraLogo from "@/components/meta/QetraLogo";
+import SectionTitle from "@/components/text/SectionTitle";
 import SuccessBadgeText from "@/components/text/SuccessBadgeText";
 import Image from 'next/image';
 
 export default function Home() {
     return (
-        <main className="h-screen w-screen">
+        <main className="h-full w-full">
             <div className='h-full w-full'>
                 <div
                     className='flex justify-center items-center h-full w-full py-12 absolute inset-0 -z-50'> {/* background */}
-                    <QetraLogo className={'fill-current text-[#24222A] h-full w-full'}/>
+                    <QetraLogo className={'fill-current text-qetra-card h-full w-full'}/>
                 </div>
-                <div className='flex flex-col justify-stretch items-center h-full pt-12 md:pt-34 gap-16'>
-                    <div className='font-semibold text-center text-6xl'>
+                <div className='flex flex-col justify-stretch items-center gap-16 h-full'>
+                    <SectionTitle>
                         Hi, we are Qetra.
-                    </div>
-                    <div className='font-semibold flex-grow text-center text-6xl  md:w-4/5'>
+                    </SectionTitle>
+                    <div className='font-semibold flex-grow text-center text-6xl md:w-1/2'>
                         We prioritize <span className='text-qetra-success'>excellence over cost</span>,
                         making us the right partner for those
-                        value <SuccessBadgeText>HIGH STANDARDS</SuccessBadgeText> and <SuccessBadgeText>LONG-TERM SUCCESS</SuccessBadgeText>.
+                        value <SuccessBadgeText>high standards</SuccessBadgeText> and <SuccessBadgeText>long-term success</SuccessBadgeText>.
                     </div>
                     <div className='flex-grow'>
-                    <Image priority src='svg/scroll.svg' width={192} height={192} alt='ask-scroll-icon'/>
+                        <Image priority
+                               src='svg/scroll.svg'
+                               layout='responsive'
+                               width={192}
+                               height={192}
+                               alt='ask-scroll-icon'/>
                     </div>
+                </div>
+            </div>
+            <div className='w-full px-10 md:px-40 flex flex-col gap-8'>
+                <SectionTitle>
+                    What Sets Us Apart?
+                </SectionTitle>
+                <div className={'grid grid-cols-1 xl:grid-cols-3 gap-x-4 gap-y-1 xl:gap-x-10 xl:gap-y-2 auto-rows-auto items-center'}>
+                    <LabeledCard
+                        label='no compromise on quality'
+                        slotProps={{
+                            label: {
+                                className: 'rotate-3'
+                            }
+                        }}>We uphold quality above all else, prioritizing excellence over shortcuts or
+                        cost-cutting.</LabeledCard>
+                    <LabeledCard
+                        label='deep it competence'
+                        slotProps={{
+                            label: {
+                                className: '-rotate-9'
+                            }
+                        }}
+                    >Each of us came through some real-world <s>sh</s> challenges
+                        to deliver best quality for you today.</LabeledCard>
+                    <LabeledCard
+                        label='personally tailored solutions'
+                        slotProps={{
+                            label: {
+                                className: 'rotate-10'
+                            }
+                        }}
+                    >We do hear/listen to your needs. Every client is
+                        unique, and so are our solutions.</LabeledCard>
+                    <LabeledCard label='care is a core'
+                                 slotProps={{
+                                     label: {
+                                         className: 'rotate-3 right-20 self-end'
+                                     }
+                                 }}>We speak openly and standing by our promises.</LabeledCard>
+                    <LabeledCard label='competence in healthcare domain' slotProps={{
+                        label: {
+                            className: '-rotate-3'
+                        }
+                    }}>We have a proven track record of delivering
+                        impactful solutions and building healthcare related IT systems.</LabeledCard>
+                    <LabeledCard label='responsibility' slotProps={{
+                        label: {
+                            className: 'rotate-20 top-10 self-end'
+                        }
+                    }}>We believe in open dialogue, delivering honest feedback, and
+                        keeping you in the loop at every turn.</LabeledCard>
                 </div>
             </div>
         </main>

@@ -16,10 +16,19 @@ const config: Config = {
       colors: {
         'qetra-secondary': '#D9D9D9',
         'qetra-success': '#C3E600',
-        'qetra-success-border': '#D1FF03'
+        'qetra-success-border': '#D1FF03',
+        'qetra-card': '#24222A'
       },
       padding: {
         '34': '136px'
+      },
+      height: {
+          '34': '136px'
+      },
+      rotate: {
+        '9': '9deg',
+        '10': '10deg',
+        '20': '20deg'
       }
     },
   },

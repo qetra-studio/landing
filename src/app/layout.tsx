@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 export default function RootLayout({children}: PropsWithChildren) {
     return (
         <html lang="en">
-        <body className={`${inter.className} antialiased`}>
+        <body className={`${inter.className} antialiased w-full h-screen`}>
         <Header/>
         {children}
         </body>
