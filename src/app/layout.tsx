@@ -14,6 +14,8 @@ export const metadata: Metadata = {
     },
     openGraph: {
         url: 'https://qetra.studio/',
+        title: 'Qetra Studio',
+        description: 'Qetra - the outstanding provider of IT services.'
         // todo
     } // todo seo optimization
 };
