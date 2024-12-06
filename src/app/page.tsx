@@ -2,7 +2,12 @@ import LabeledCard from "@/components/cards/LabeledCard";
 import QetraLogo from "@/components/meta/QetraLogo";
 import SectionTitle from "@/components/text/SectionTitle";
 import SuccessBadgeText from "@/components/text/SuccessBadgeText";
+import {Metadata} from "next";
 import Image from 'next/image';
+
+const metadata: Metadata = {
+    description: "Home page of Qetra."
+}
 
 export default function Home() {
     return (

@@ -7,8 +7,15 @@ import {PropsWithChildren, ReactNode} from "react";
 const inter = Inter({subsets: ["latin"]});
 
 export const metadata: Metadata = {
-    title: "Qetra",
-    description: "Home page of Qetra."
+    title: {template: '%s | Qetra', absolute: 'Qetra'},
+    keywords: ['qetra', 'it', 'healthcare', 'management', 'development'],
+    alternates: {
+        'canonical': 'https://qetra.studio/'
+    },
+    openGraph: {
+        url: 'https://qetra.studio/',
+        // todo
+    } // todo seo optimization
 };
 
 export default function RootLayout({children}: PropsWithChildren) {
