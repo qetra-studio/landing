@@ -1,3 +1,4 @@
+import QetraBackgroundScreen from "@/components/meta/QetraBackgroundScreen";
 import QetraLogo from "@/components/meta/QetraLogo";
 import SectionTitle from "@/components/text/SectionTitle";
 import SuccessBadgeText from "@/components/text/SuccessBadgeText";
@@ -5,10 +6,7 @@ import Image from "next/image";
 
 export default function  HelloSection() {
     return <div className='h-full w-full'>
-        <div
-            className='flex justify-center items-center h-full w-full py-12 absolute inset-0 -z-50'> {/* background */}
-            <QetraLogo className={'fill-current text-qetra-card h-full w-full'}/>
-        </div>
+        <QetraBackgroundScreen/>
         <div className='flex flex-col justify-stretch items-center gap-16 h-full'>
             <SectionTitle>
                 Hi, we are Qetra.

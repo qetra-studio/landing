@@ -1,10 +1,7 @@
-import HelloSection from "@/app/HelloSection";
+import HelloSection from "@/app/(routes)/HelloSection";
 import LabeledCard from "@/components/cards/LabeledCard";
-import QetraLogo from "@/components/meta/QetraLogo";
 import SectionTitle from "@/components/text/SectionTitle";
-import SuccessBadgeText from "@/components/text/SuccessBadgeText";
 import {Metadata} from "next";
-import Image from 'next/image';
 
 export const metadata: Metadata = {
     description: "Home page of Qetra."
