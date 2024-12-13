@@ -1,32 +1,58 @@
 {
-  "name": "nextjs-template",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "type-check": "tsc --noEmit"
-  },
-  "dependencies": {
-    "next": "15.0.3",
-    "react": "19.0.0-rc-66855b96-20241106",
-    "react-dom": "19.0.0-rc-66855b96-20241106"
-  },
-  "devDependencies": {
-    "@tailwindcss/typography": "^0.5.15",
-    "@types/node": "^20",
-    "@types/react": "npm:types-react@19.0.0-rc.1",
-    "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1",
-    "eslint": "^8",
-    "eslint-config-next": "15.0.3",
-    "postcss": "^8",
-    "tailwindcss": "^3.4.1",
-    "typescript": "^5"
-  },
-  "overrides": {
-    "@types/react": "npm:types-react@19.0.0-rc.1",
-    "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1"
-  }
+	"name": "qetra-website",
+	"version": "0.1.0",
+	"private": true,
+	"author": "Qetra LLC",
+	"type": "module",
+	"scripts": {
+		"dev": "next dev --turbopack",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint",
+		"type-check": "tsc --noEmit"
+	},
+	"dependencies": {
+		"@trivago/prettier-plugin-sort-imports": "^5.2.0",
+		"next": "15.0.3",
+		"react": "19.0.0-rc-66855b96-20241106",
+		"react-dom": "19.0.0-rc-66855b96-20241106"
+	},
+	"engines": {
+		"node": ">=18.16",
+		"npm": ">=8.15",
+		"yarn": ">=1.22"
+	},
+	"devDependencies": {
+		"@tailwindcss/typography": "^0.5.15",
+		"@types/node": "^20",
+		"@types/react": "npm:types-react@19.0.0-rc.1",
+		"@types/react-dom": "npm:types-react-dom@19.0.0-rc.1",
+		"eslint": "^8",
+		"eslint-config-next": "15.0.3",
+		"lint-staged": "^15.2.11",
+		"postcss": "^8",
+		"prettier": "^3.4.2",
+		"tailwindcss": "^3.4.1",
+		"typescript": "^5"
+	},
+	"lint-staged": {
+		"*.{js,ts,tsx,jsx}": "eslint --fix",
+		"*.{css,js,ts,tsx,jsx,html,json,md,svg}": "prettier --write -u"
+	},
+	"overrides": {
+		"@types/react": "npm:types-react@19.0.0-rc.1",
+		"@types/react-dom": "npm:types-react-dom@19.0.0-rc.1"
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	}
 }

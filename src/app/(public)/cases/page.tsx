@@ -1,3 +1,3 @@
 export default function CasesPage() {
-    return 'Cases'
+	return 'Cases';
 }
