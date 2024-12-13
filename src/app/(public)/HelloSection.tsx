@@ -15,7 +15,18 @@ export default function HelloSection() {
 					<SuccessBadgeText>long-term success</SuccessBadgeText>.
 				</div>
 				<div className="flex-grow">
-					<Image priority src="svg/scroll.svg" layout="responsive" width={192} height={192} alt="ask-scroll-icon" />
+					<Image
+						priority
+						src="svg/scroll.svg"
+						width={192}
+						height={192}
+						alt="ask-scroll-icon"
+						sizes="100vw"
+						style={{
+							width: '100%',
+							height: 'auto',
+						}}
+					/>
 				</div>
 			</div>
 		</div>

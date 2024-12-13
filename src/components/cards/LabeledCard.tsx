@@ -1,5 +1,7 @@
 import { PropsWithChildren, ReactNode } from 'react';
 
+import clsx from 'clsx/lite';
+
 interface LabeledCardProps {
 	label: ReactNode;
 	slotProps?: {
@@ -13,7 +15,10 @@ export default function LabeledCard({ label, slotProps, children }: PropsWithChi
 	return (
 		<div className="flex flex-col items-center">
 			<div
-				className={`border-qetra-success-border border-2 rounded-full w-max p-4 uppercase text-qetra-success relative top-4 ${slotProps?.label?.className ?? ''}`}
+				className={clsx(
+					'border-qetra-success-border border-2 rounded-full w-max p-4 uppercase text-qetra-success relative top-4',
+					slotProps?.label?.className
+				)}
 			>
 				{label}
 			</div>
