@@ -11,9 +11,9 @@ export default async function CaseStudyPage({ params }: { params: Promise<Params
 		return notFound();
 	}
 	return (
-		<div className="px-12">
+		<main className="px-12">
 			<div className="whitespace-pre text-wrap">{JSON.stringify(cases[id as keyof typeof cases], null, '\t')}</div>
-		</div>
+		</main>
 	);
 }
 

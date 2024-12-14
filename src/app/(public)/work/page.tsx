@@ -5,5 +5,5 @@ export const metadata: Metadata = {
 };
 
 export default function Work() {
-	return <div>Work page</div>;
+	return <main>Work page</main>;
 }

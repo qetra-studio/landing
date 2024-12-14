@@ -13,14 +13,18 @@ function NavigationBar() {
 	);
 }
 
-export default function Header() {
+interface HeaderProps {
+	withNavigationBar?: true;
+}
+
+export default function QetraSiteHeader({ withNavigationBar }: HeaderProps) {
 	return (
-		<header className="sticky top-0 h-12 md:h-34">
+		<header className="sticky top-0">
 			<div className="flex flex-row w-full px-24 py-12 justify-between absolute invisible md:visible z-50">
 				<Link href="/">
 					<QetraLogo className="w-10 h-10 fill-current text-qetra-secondary" />
 				</Link>
-				<NavigationBar />
+				{withNavigationBar ? <NavigationBar /> : null}
 			</div>
 		</header>
 	);

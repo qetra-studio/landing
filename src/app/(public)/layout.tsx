@@ -1,6 +1,6 @@
 import { PropsWithChildren } from 'react';
 
-import Header from '@/app/(public)/Header';
+import QetraSiteHeader from '@/components/meta/QetraSiteHeader';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -17,11 +17,11 @@ export const metadata: Metadata = {
 	}, // todo seo optimization
 };
 
-export default function RootLayout({ children }: PropsWithChildren) {
+export default function PublicPagesLayout({ children }: PropsWithChildren) {
 	return (
 		<>
-			<Header />
-			{children}
+			<QetraSiteHeader withNavigationBar />
+			<main className="w-full h-full pt-12 md:pt-34">{children}</main>
 		</>
 	);
 }

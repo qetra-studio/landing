@@ -5,5 +5,5 @@ export const metadata: Metadata = {
 };
 
 export default function Contacts() {
-	return <div>Contacts page</div>;
+	return <main>Contacts page</main>;
 }

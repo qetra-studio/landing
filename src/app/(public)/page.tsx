@@ -11,15 +11,9 @@ const cardProps = {
 	className: 'text-3xl',
 } as const;
 
-function sleeper(ms: number) {
-	return function (x: unknown) {
-		return new Promise((resolve) => setTimeout(() => resolve(x), ms));
-	};
-}
-
 export default async function Home() {
 	return (
-		<main className="h-full w-full">
+		<div className="h-full w-full">
 			<HelloSection />
 			<div className="w-full px-10 md:px-40 flex flex-col gap-8">
 				<SectionTitle>What Sets Us Apart?</SectionTitle>
@@ -92,6 +86,6 @@ export default async function Home() {
 					</LabeledCard>
 				</div>
 			</div>
-		</main>
+		</div>
 	);
 }
