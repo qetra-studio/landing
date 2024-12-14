@@ -1,11 +1,15 @@
 import { PropsWithChildren, ReactNode } from 'react';
 
+import QetraCard from '@/components/cards/index';
 import clsx from 'clsx/lite';
 
 interface LabeledCardProps {
 	label: ReactNode;
 	slotProps?: {
 		label?: {
+			className?: string;
+		};
+		card?: {
 			className?: string;
 		};
 	};
@@ -22,7 +26,7 @@ export default function LabeledCard({ label, slotProps, children }: PropsWithChi
 			>
 				{label}
 			</div>
-			<div className="bg-qetra-card p-8 rounded-md text-3xl">{children}</div>
+			<QetraCard className={slotProps?.card?.className}>{children}</QetraCard>
 		</div>
 	);
 }

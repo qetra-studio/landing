@@ -52,7 +52,12 @@ const sample: CaseStudy & ShortCaseStudy = {
 		integrations: ['youtube', 'twitter', 'telegram memes'],
 	},
 	description:
-		'Sample description with many many many many words wow that so much can it handle more? I dont know to be honest',
+		'Sample description with many many many many words wow that so much can it handle more? I dont know to be honest ' +
+		'Sample description with many many many many words wow that so much can it handle more? I dont know to be honest ' +
+		'Sample description with many many many many words wow that so much can it handle more? I dont know to be honest ' +
+		'Sample description with many many many many words wow that so much can it handle more? I dont know to be honest ' +
+		'Sample description with many many many many words wow that so much can it handle more? I dont know to be honest ' +
+		'Sample description with many many many many words wow that so much can it handle more? I dont know to be honest ',
 	imageUrl:
 		'https://images.squarespace-cdn.com/content/v1/653fe6ddd43f905972f11f8f/4059410c-ce49-4c20-b79b-79d2ef0867ca/2.png',
 };

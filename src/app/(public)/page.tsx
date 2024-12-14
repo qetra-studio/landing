@@ -7,6 +7,10 @@ export const metadata: Metadata = {
 	description: 'Home page of Qetra.',
 };
 
+const cardProps = {
+	className: 'text-3xl',
+} as const;
+
 export default function Home() {
 	return (
 		<main className="h-full w-full">
@@ -20,6 +24,7 @@ export default function Home() {
 							label: {
 								className: 'rotate-3',
 							},
+							card: cardProps,
 						}}
 					>
 						We uphold quality above all else, prioritizing excellence over shortcuts or cost-cutting.
@@ -30,6 +35,7 @@ export default function Home() {
 							label: {
 								className: '-rotate-9',
 							},
+							card: cardProps,
 						}}
 					>
 						Each of us came through some real-world <s>sh</s> challenges to deliver best quality for you today.
@@ -40,6 +46,7 @@ export default function Home() {
 							label: {
 								className: 'rotate-10',
 							},
+							card: cardProps,
 						}}
 					>
 						We do hear/listen to your needs. Every client is unique, and so are our solutions.
@@ -50,6 +57,7 @@ export default function Home() {
 							label: {
 								className: 'rotate-3 right-20 self-end',
 							},
+							card: cardProps,
 						}}
 					>
 						We speak openly and standing by our promises.
@@ -60,6 +68,7 @@ export default function Home() {
 							label: {
 								className: '-rotate-3',
 							},
+							card: cardProps,
 						}}
 					>
 						We have a proven track record of delivering impactful solutions and building healthcare related IT systems.
@@ -70,6 +79,7 @@ export default function Home() {
 							label: {
 								className: 'rotate-20 top-10 self-end',
 							},
+							card: cardProps,
 						}}
 					>
 						We believe in open dialogue, delivering honest feedback, and keeping you in the loop at every turn.
