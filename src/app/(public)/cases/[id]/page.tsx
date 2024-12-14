@@ -10,13 +10,11 @@ export default async function CaseStudyPage({ params }: { params: Promise<Params
 	if (!cases[id as keyof typeof cases]) {
 		return notFound();
 	}
-	return 'TBD';
-	/*
 	return (
-		<div className={'whitespace-pre text-wrap px-12'}>
-			{JSON.stringify(cases[id as keyof typeof cases], null, '\t')}
+		<div className="px-12">
+			<div className="whitespace-pre text-wrap">{JSON.stringify(cases[id as keyof typeof cases], null, '\t')}</div>
 		</div>
-	);*/
+	);
 }
 
 export function generateStaticParams(): Params[] {
