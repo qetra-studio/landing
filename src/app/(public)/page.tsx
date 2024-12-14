@@ -11,7 +11,13 @@ const cardProps = {
 	className: 'text-3xl',
 } as const;
 
-export default function Home() {
+function sleeper(ms: number) {
+	return function (x: unknown) {
+		return new Promise((resolve) => setTimeout(() => resolve(x), ms));
+	};
+}
+
+export default async function Home() {
 	return (
 		<main className="h-full w-full">
 			<HelloSection />
