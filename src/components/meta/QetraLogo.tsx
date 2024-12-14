@@ -1,10 +1,12 @@
+import clsx from 'clsx/lite';
+
 interface QetraLogoProps {
 	className?: string;
 }
 
 export default function QetraLogo({ className }: QetraLogoProps) {
 	return (
-		<svg className={className} viewBox="0 0 825 825" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<svg className={clsx(className)} viewBox="0 0 825 825" fill="none" xmlns="http://www.w3.org/2000/svg">
 			<path
 				fillRule="evenodd"
 				clipRule="evenodd"
