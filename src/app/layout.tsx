@@ -1,8 +1,7 @@
-import { PropsWithChildren, ReactNode } from 'react';
+import { PropsWithChildren } from 'react';
 
 import Providers from '@/app/Providers';
 import QetraSiteFooter from '@/components/meta/QetraSiteFooter';
-import env from '@/environment';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 
@@ -30,6 +29,7 @@ export default async function RootLayout({ children }: PropsWithChildren) {
 			<body className={`${inter.className} antialiased w-full h-screen`}>
 				{children}
 				<Providers />
+				<QetraSiteFooter />
 			</body>
 		</html>
 	);

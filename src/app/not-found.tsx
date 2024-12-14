@@ -1,5 +1,4 @@
 import QetraBackgroundScreen from '@/components/meta/QetraBackgroundScreen';
-import SuccessBadgeText from '@/components/text/SuccessBadgeText';
 import Link from 'next/link';
 
 export default function Page404() {

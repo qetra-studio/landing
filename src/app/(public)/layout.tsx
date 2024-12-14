@@ -1,6 +1,5 @@
 import { PropsWithChildren } from 'react';
 
-import QetraSiteFooter from '@/components/meta/QetraSiteFooter';
 import QetraSiteHeader from '@/components/meta/QetraSiteHeader';
 import type { Metadata } from 'next';
 
@@ -23,7 +22,6 @@ export default function PublicPagesLayout({ children }: PropsWithChildren) {
 		<>
 			<QetraSiteHeader withNavigationBar />
 			<main className="w-full h-full pt-12 md:pt-34">{children}</main>
-			<QetraSiteFooter />
 		</>
 	);
 }
