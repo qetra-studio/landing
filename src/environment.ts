@@ -5,6 +5,8 @@ const schema = zod.object({
 	version: zod.string().nonempty(),
 });
 
+console.log(process.env);
+
 const env = schema.parse(process.env);
 
 export default env;
