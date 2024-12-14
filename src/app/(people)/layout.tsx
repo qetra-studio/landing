@@ -6,7 +6,7 @@ import QetraSiteHeader from '@/components/meta/QetraSiteHeader';
 export default async function PeopleLayout({ children }: PropsWithChildren) {
 	return (
 		<>
-			<QetraSiteHeader withNavigationBar />
+			<QetraSiteHeader />
 			<main className="w-full h-full pt-12 md:pt-34">
 				<QetraBackgroundScreen />
 				{children}
