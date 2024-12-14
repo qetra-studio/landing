@@ -76,7 +76,6 @@ jobs:
       - name: Build with Next.js
         env:
           ENVIRONMENT: production
-          VERSION: ${{ github.run_id }}.${{ github.run_number }}.${{ github.run_attempt }}
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
