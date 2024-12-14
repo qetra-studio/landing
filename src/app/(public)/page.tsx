@@ -11,7 +11,7 @@ const cardProps = {
 	className: 'text-3xl',
 } as const;
 
-export default async function Home() {
+export default async function HomePage() {
 	return (
 		<div className="h-full w-full">
 			<HelloSection />

@@ -1,6 +1,8 @@
 import { PropsWithChildren, ReactNode } from 'react';
 
 import Providers from '@/app/Providers';
+import QetraSiteFooter from '@/components/meta/QetraSiteFooter';
+import env from '@/environment';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 
