@@ -21,7 +21,7 @@ export default function PublicPagesLayout({ children }: PropsWithChildren) {
 	return (
 		<>
 			<QetraSiteHeader withNavigationBar />
-			<main className="w-full h-full pt-12 md:pt-34">{children}</main>
+			<main className="w-full h-full pt-12 lg:pt-34">{children}</main>
 		</>
 	);
 }

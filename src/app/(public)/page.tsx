@@ -8,14 +8,14 @@ export const metadata: Metadata = {
 };
 
 const cardProps = {
-	className: 'text-3xl',
+	className: 'text-2xl lg:text-3xl',
 } as const;
 
 export default async function HomePage() {
 	return (
-		<div className="h-full w-full">
+		<div className="h-full w-full px-10 lg:px-40">
 			<HelloSection />
-			<div className="w-full px-10 md:px-40 flex flex-col gap-8">
+			<div className="w-full flex flex-col gap-8">
 				<SectionTitle>What Sets Us Apart?</SectionTitle>
 				<div className="grid grid-cols-1 xl:grid-cols-3 gap-x-4 gap-y-1 xl:gap-x-10 xl:gap-y-2 auto-rows-auto items-center">
 					<LabeledCard
