@@ -10,7 +10,7 @@ export default function SuccessBadgeText({ className = '', children }: PropsWith
 	return (
 		<span
 			className={clsx(
-				'bg-qetra-success text-black border-qetra-success-border border-2 rounded-full uppercase text-center text-xl p-3 align-middle text-nowrap',
+				'bg-qetra-success text-black border-qetra-success-border border-2 rounded-full uppercase text-center text-sm lg:text-xl p-1 lg:p-3 align-middle text-nowrap',
 				className
 			)}
 		>
