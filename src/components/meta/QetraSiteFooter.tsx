@@ -1,4 +1,4 @@
-import env from '@/environment';
+import env from '@/environment/server';
 
 export default function QetraSiteFooter() {
 	return (
