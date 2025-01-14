@@ -14,10 +14,11 @@
 		"postinstall": "husky"
 	},
 	"dependencies": {
+		"@microsoft/clarity": "^1.0.0",
 		"@next/env": "^15.1.0",
 		"@trivago/prettier-plugin-sort-imports": "^5.2.0",
 		"clsx": "^2.1.1",
-		"next": "^15.1.0",
+		"next": "^15.1.4",
 		"next-nprogress-bar": "^2.4.2",
 		"react": "19.0.0-rc-66855b96-20241106",
 		"react-dom": "19.0.0-rc-66855b96-20241106",

@@ -1,4 +1,4 @@
-import * as zod from 'zod';
+﻿import * as zod from 'zod';
 import { loadEnvConfig } from '@next/env';
 
 loadEnvConfig(process.cwd());
@@ -9,7 +9,7 @@ const schema = zod.object({
 });
 
 const env = schema.parse({
-	environment: process.env.QETRA_ENVIRONMENT,
+	environment: process.env.NEXT_PUBLIC_QETRA_ENVIRONMENT,
 	version: process.env.QETRA_VERSION,
 });
 
