@@ -10,7 +10,7 @@ export default async function CasesPage() {
 		<main className="w-full h-full flex flex-col gap-4 pl-20 pr-24">
 			<Suspense fallback={'Loading...'}>
 				{Object.entries(cases).map(([id, c]) => (
-					<QetraCard key={id} className="flex flex-col gap-2 pl-[4.5rem]">
+					<QetraCard key={id} className="flex flex-col gap-2 pl-18">
 						<div className="flex flex-row justify-between">
 							<h4 className="text-xl">{c.title}</h4>
 							<Link href={`/cases/${id}`} className="text-qetra-success">

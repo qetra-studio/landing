@@ -1,28 +1,62 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
 
-:root {
-	--foreground-rgb: 0, 0, 0;
-	--background-start-rgb: 214, 219, 220;
-	--background-end-rgb: 255, 255, 255;
+@theme {
+	--background-image-gradient-radial: radial-gradient(var(--tw-gradient-stops));
+	--background-image-gradient-conic: conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops));
+
+	--color-qetra-secondary: #d9d9d9;
+	--color-qetra-success: #c3e600;
+	--color-qetra-success-border: #d1ff03;
+	--color-qetra-card: #24222a;
+
+	--padding-34: 136px;
+
+	--height-34: 136px;
+
+	--rotate-9: 9deg;
+	--rotate-10: 10deg;
+	--rotate-20: 20deg;
 }
 
-@media (prefers-color-scheme: dark) {
-	:root {
-		--foreground-rgb: 255, 255, 255;
-		--background-start-rgb: 0, 0, 0;
-		--background-end-rgb: 0, 0, 0;
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+	*,
+	::after,
+	::before,
+	::backdrop,
+	::file-selector-button {
+		border-color: var(--color-gray-200, currentcolor);
 	}
 }
 
-body {
-	color: rgb(var(--foreground-rgb));
-	background: #1c1a22;
+@utility text-balance {
+	text-wrap: balance;
 }
 
 @layer utilities {
-	.text-balance {
-		text-wrap: balance;
+	:root {
+		--foreground-rgb: 0, 0, 0;
+		--background-start-rgb: 214, 219, 220;
+		--background-end-rgb: 255, 255, 255;
+	}
+
+	@media (prefers-color-scheme: dark) {
+		:root {
+			--foreground-rgb: 255, 255, 255;
+			--background-start-rgb: 0, 0, 0;
+			--background-end-rgb: 0, 0, 0;
+		}
+	}
+
+	body {
+		color: rgb(var(--foreground-rgb));
+		background: #1c1a22;
 	}
 }
