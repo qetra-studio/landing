@@ -26,11 +26,7 @@ export const metadata: Metadata = {
 export default async function RootLayout({ children }: PropsWithChildren) {
 	return (
 		<html lang="en">
-			<body className={`${inter.className} antialiased w-full h-screen`}>
-				{children}
-				<Providers />
-				<QetraSiteFooter />
-			</body>
+			<body className={`${inter.className} antialiased w-full h-screen`}>{children}</body>
 		</html>
 	);
 }
