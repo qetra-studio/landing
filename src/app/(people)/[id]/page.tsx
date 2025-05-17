@@ -15,5 +15,5 @@ export default async function PeopleByIdPage({ params }: { params: Promise<Param
 }
 
 export function generateStaticParams() {
-	return [{ id: 'mrlldd' }, { id: 'mamay' }, { id: 'kalexi' }, { id: 'trunovd' }, { id: 'alonaberezniak' }];
+	return [{ id: 'mrlldd' }, { id: 'mamay' }, { id: 'kalexi' }, { id: 'alonaberezniak' }];
 }
