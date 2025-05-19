@@ -1,11 +1,16 @@
 @import 'tailwindcss';
 
 @theme {
-	--bg-dark: rgba(22, 22, 22, 1);
+	--color-darkbg: #161616;
+	--color-dark-base-100: #262626;
 }
 
 @plugin "daisyui" {
 	themes:
 		light --default,
 		dark --prefersdark;
+}
+
+@utility card {
+	@apply bg-dark-base-100;
 }
