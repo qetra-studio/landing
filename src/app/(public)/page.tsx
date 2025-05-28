@@ -1,11 +1,23 @@
 import EmailCopy from '@/components/EmailCopy';
+import QetraTypewriter from '@/components/QetraTypewriter';
 import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+import { Typewriter } from 'react-simple-typewriter';
 
 export const metadata: Metadata = {
 	description: 'Home page of Qetra.',
 };
+
+const sentences = [
+	'no compromise on quality',
+	'deep it competence',
+	'vast it competence',
+	'personally tailored solutions',
+	'care is a core',
+	'competence on healthcare domain',
+	'responsibility',
+];
 
 export default function HomePage() {
 	return (
@@ -24,8 +36,10 @@ export default function HomePage() {
 					</h1>
 				</div>
 				<div className="flex items-center gap-10">
-					<span className="text-base text-white">we have</span>
-					<span className="typewriter text-base font-medium text-purple-300">no compromise on quality</span>
+					<span className="text-base text-white">
+						we have
+						<QetraTypewriter sentences={sentences} />
+					</span>
 				</div>
 			</div>
 			<div className="grid grid-flow-col grid-rows-6 gap-4">
@@ -34,7 +48,7 @@ export default function HomePage() {
 					<div className="card-body flex flex-col justify-between">
 						<span className="text-3xl text-white font-medium">Services</span>
 						<Image
-							src="svg/services_img.svg"
+							src="svg/services-img.svg"
 							width={1}
 							height={1}
 							alt="services-icon"
@@ -161,6 +175,12 @@ export default function HomePage() {
 						</div>
 					</Link>
 				</div>
+			</div>
+			{/* For DOM only */}
+			<div className="sr-only">
+				{sentences.map((sentence, i) => (
+					<span key={i}>{sentence}</span>
+				))}
 			</div>
 		</div>
 	);
