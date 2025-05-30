@@ -11,8 +11,8 @@ export const metadata: Metadata = {
 
 const sentences = [
 	'no compromise on quality',
-	'deep it competence',
-	'vast it competence',
+	'deep IT competence',
+	'vast IT competence',
 	'personally tailored solutions',
 	'care is a core',
 	'competence on healthcare domain',
@@ -105,47 +105,55 @@ export default function HomePage() {
 							</div>
 						</Link>
 						{/* Case studies */}
+						{/*<div className="rounded-4xl size-full">*/}
+						{/*	<Link className="col-span-1 size-full lg:justify-end items-center lg:items-start group" href="/mrlldd">*/}
+						{/*		<div className="grid grid-rows-3 inset-0 size-full">*/}
+						{/*			<div className="card row-span-1 grid grid-cols-5 pr-0 rounded-bl-none rounded-br-none pt-0 rounded-tl-4xl rounded-tr-4xl group-hover:bg-darkbg">*/}
+						{/*				<div className="card rounded-tl-4xl rounded-bl-none rounded-br-[0] col-span-3"/>*/}
+						{/*				<div className="not-hover:card group-hover:bg-darkbg col-span-2  invisible group-hover:visible p-0 size-full group-hover:pb-4 group-hover:pl-4 rounded-4xl">*/}
+						{/*					<div className="size-full rounded-3xl bg-purple-top-right-button z-20">*/}
+						{/*						<span className="flex justify-center items-center size-full ">dfsf</span >*/}
+						{/*					</div>*/}
+						{/*					<div className="card absolute size-full z-10 rounded-none p-0"></div>*/}
+						{/*				</div>*/}
+						{/*			</div>*/}
+						{/*			<div className="row-span-2 rounded-tr-none rounded-tl-none p-4 size-full card rounded-bl-4xl rounded-br-4xl">*/}
+						{/*				<div className="break-all size-full col-span-3 md:break-normal text-3xl md:text-2xl lg:text-3xl text-white font-medium flex p-4 items-end justify-start">*/}
+						{/*					<span>*/}
+						{/*						All case <br />*/}
+						{/*						studies*/}
+						{/*					</span>*/}
+						{/*				</div>*/}
+						{/*			</div>*/}
+						{/*		</div>*/}
+						{/*	</Link>*/}
+						{/*</div>*/}
 						<Link
-							className="card col-span-1 rounded-4xl size-full lg:justify-end p-2 items-center lg:items-start md:p-4 lg:p-6 group"
+							className="col-span-1 rounded-4xl size-full lg:justify-end items-center lg:items-start hover:bg-transparent bg-dark-base-100 group"
 							href="/mrlldd"
 						>
-							<>
-								<div className="absolute inset-0 z-10 card size-full rounded-4xl p-4 group-hover:bg-custom-radial-gradient transition-all duration-500">
-									<span className="break-all size-full md:break-normal text-3xl md:text-2xl lg:text-3xl text-white font-medium flex p-4 items-end justify-start">
-										All case <br />
-										studies
-									</span>
-								</div>
-								<div
-									className="absolute inset-0 z-20 pointer-events-none transition-opacity duration-300 opacity-0 group-hover:opacity-100 rounded-4xl bg-darkbg"
-									style={{
-										clipPath: 'url(#caseClipRoundedCustom)',
-									}}
-								/>
-
-								<div className="absolute z-30 inset-0 bg-transparent  cursor-pointer invisible transition-opacity duration-300 group-hover:visible flex justify-end">
-									<div className="h-[30%] w-[30%] bg-purple-top-right-button rounded-3xl flex flex-col items-center justify-center">
-										<Image src="svg/schedule-arrow.svg" alt="Arrow" width={35} height={35} className="" />
+							<div className="grid grid-flow-row grid-rows-3 size-full">
+								<div className="row-span-1 size-full grid grid-flow-col grid-cols-3 relative">
+									<div className="grid grid-flow-row grid-rows-2 group-hover:bg-darkbg absolute inset-0 z-10">
+										<div className="row-span-1 group-hover:size-full group-hover:rounded-tr-4xl grid grid-cols-3">
+											<div className="col-span-2 group-hover:rounded-tr-4xl group-hover:bg-dark-base-100 size-full group-hover:rounded-tl-4xl" />
+										</div>
+										<div className="row-span-1 group-hover:bg-dark-base-100 group-hover:size-full group-hover:rounded-tr-4xl" />
+									</div>
+									<div className="col-span-2" />
+									<div className="col-span-1 bg-darkbg rounded-bl-4xl z-20 invisible group-hover:visible size-full pl-2 pb-2">
+										<span className="p-4 bg-purple-300 size-full rounded-4xl flex items-center justify-center">шо</span>
 									</div>
 								</div>
-								<svg>
-									<defs>
-										<clipPath id="caseClipRoundedCustom" clipPathUnits="objectBoundingBox">
-											<path
-												d="
-													M 0.59 0
-													A 0.08 0.1 0 0 1 0.67 0.1
-													L 0.67 0.22
-													A 0.08 0.1 0 0 0 0.73 0.32
-													L 0.92 0.32
-													A 0.08 0.1 0 0 1 1 0.4
-													L 1 0
-													Z"
-											/>
-										</clipPath>
-									</defs>
-								</svg>
-							</>
+								<div className="row-span-2 rounded-bl-4xl rounded-br-4xl rounded-tr-4xl relative group-hover:bg-dark-base-100">
+									<div className="break-all size-full col-span-3 md:break-normal text-3xl md:text-2xl lg:text-3xl text-white font-medium flex items-end justify-start">
+										<span className="p-6">
+											All case <br />
+											studies
+										</span>
+									</div>
+								</div>
+							</div>
 						</Link>
 					</div>
 				</div>

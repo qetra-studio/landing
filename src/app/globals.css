@@ -17,7 +17,7 @@
 	@apply bg-dark-base-100;
 }
 
-.group:hover .group-hover\:bg-custom-radial-gradient {
+.bg-custom-radial-gradient:hover {
 	background-image: radial-gradient(95.07% 95.07% at 107.18% -0.95%, #c086de 0%, #2d296e 71.15%, #262626 100%);
 	backdrop-filter: blur(11px);
 }
