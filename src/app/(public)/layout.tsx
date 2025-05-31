@@ -1,6 +1,5 @@
 import { PropsWithChildren } from 'react';
 
-import QetraSiteHeader from '@/components/meta/QetraSiteHeader';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -20,7 +19,7 @@ export const metadata: Metadata = {
 export default function PublicPagesLayout({ children }: PropsWithChildren) {
 	return (
 		<>
-			<main className="size-full">{children}</main>
+			<main className="h-full p-4 lg:p-16">{children}</main>
 		</>
 	);
 }

@@ -8,9 +8,8 @@ interface Props {
 }
 
 export default function EmailCopy({ text, className }: Readonly<Props>) {
-	const handleCopy = () => {
-		navigator.clipboard.writeText(text);
-	};
+	const handleCopy = () => navigator.clipboard.writeText(text);
+	// to show toast on success
 
 	return <Copy onClick={handleCopy} className={`"w-12 h-14 cursor-pointer hover:opacity-70" ${className}`} />;
 }

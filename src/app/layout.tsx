@@ -1,5 +1,6 @@
 import { PropsWithChildren } from 'react';
 
+import Providers from '@/app/Providers';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 
@@ -24,8 +25,9 @@ export const metadata: Metadata = {
 export default async function RootLayout({ children }: PropsWithChildren) {
 	return (
 		<html lang="en" suppressHydrationWarning>
-			<body className={`${inter.className} antialiased size-full h-screen dark:bg-darkbg`} suppressHydrationWarning>
+			<body className={`${inter.className} antialiased h-screen dark:bg-darkbg min-w-3xl`} suppressHydrationWarning>
 				{children}
+				<Providers />
 			</body>
 		</html>
 	);
