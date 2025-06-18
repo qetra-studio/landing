@@ -1,0 +1,21 @@
+import Grid, { GridItem } from '@/components/layout/grid';
+import Image from 'next/image';
+import Link from 'next/link';
+
+export default function ScheduleMeetingCell() {
+	return (
+		<GridItem href="/kalexi" component={Link} className="size-full col-span-2 rounded-4xl card md:p-4 group">
+			<Grid className="absolute inset-0 rounded-4xl grid-flow-row grid-cols-6 items-center size-full group-hover:bg-custom-radial-gradient bg-transparent p-4">
+				<GridItem
+					className="col-span-1 text-right"
+					component={Image}
+					src="svg/schedule-arrow.svg"
+					alt="Schedule arrow"
+					width={20}
+					height={20}
+				/>
+				<GridItem className="col-span-5 uppercase text-white font-normal text-xl text-left">Schedule meeting</GridItem>
+			</Grid>
+		</GridItem>
+	);
+}

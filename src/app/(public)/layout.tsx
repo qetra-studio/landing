@@ -17,9 +17,5 @@ export const metadata: Metadata = {
 };
 
 export default function PublicPagesLayout({ children }: PropsWithChildren) {
-	return (
-		<>
-			<main className="h-full p-4 lg:p-8">{children}</main>
-		</>
-	);
+	return <main className="p-16 h-full">{children}</main>;
 }
