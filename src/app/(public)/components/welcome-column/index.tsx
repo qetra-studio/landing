@@ -15,7 +15,7 @@ const sentences = [
 
 export default function WelcomeColumn() {
 	return (
-		<GridItem className="gap-4 rounded-4xl bg-[url(/svg/12.svg)] bg-cover p-8 md:p-12 lg:p-30">
+		<GridItem className="gap-4 rounded-4xl bg-[url(/svg/welcome-background.svg)] bg-cover p-8 md:p-12 lg:p-30">
 			<Image priority src="svg/logo.svg" height={36} width={36} alt="Logo" className="white" />
 			<div className="space-y-6">
 				<p className="text-base font-medium text-white">Morning, we are Qetra -</p>

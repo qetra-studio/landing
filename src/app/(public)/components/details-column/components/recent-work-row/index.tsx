@@ -4,7 +4,7 @@ import Grid, { GridItem } from '@/components/layout/grid';
 
 export default function RecentWorkRow() {
 	return (
-		<GridItem className="row-span-2">
+		<GridItem className="row-span-3">
 			<Grid className="grid-flow-row grid-cols-3 gap-4 justify-items-stretch">
 				<LastProjectCell />
 				<CaseStudiesCell />

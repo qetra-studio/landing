@@ -5,7 +5,7 @@ import Grid from '@/components/layout/grid';
 
 export default function DetailsColumn() {
 	return (
-		<Grid className="grid-flow-col grid-rows-6 gap-4 ">
+		<Grid className="grid-flow-col grid-rows-9 gap-4 ">
 			<ServicesRow />
 			<RecentWorkRow />
 			<CommunicationRow />

@@ -4,7 +4,7 @@ import Stack from '@/components/layout/stack';
 
 export default function ServicesRow() {
 	return (
-		<GridItem component={Card} className="row-span-2 rounded-4xl p-6">
+		<GridItem component={Card} className="row-span-4 rounded-4xl p-6">
 			<CardBody component={Stack} className="flex-col justify-between">
 				<span className="text-3xl text-white font-medium">Services</span>
 				<span className="uppercase text-sm text-gray-400 font-medium">
