@@ -25,7 +25,13 @@ export const metadata: Metadata = {
 export default async function RootLayout({ children }: PropsWithChildren) {
 	return (
 		<html lang="en" suppressHydrationWarning>
-			<body className={`${inter.className} antialiased h-dvh dark:bg-darkbg min-w-3xl`} suppressHydrationWarning>
+			<head>
+				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+			</head>
+			<body
+				className={`${inter.className} dark:bg-qetra-dark min-h-screen max-w-screen antialiased`}
+				suppressHydrationWarning
+			>
 				{children}
 				<Providers />
 			</body>

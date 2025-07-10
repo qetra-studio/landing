@@ -1,7 +1,7 @@
 @import 'tailwindcss';
 
 @theme {
-	--color-darkbg: #161616;
+	--color-qetra-dark: #070707;
 	--color-dark-base-100: #262626;
 
 	--color-purple-top-right-button: #7e5cac;
