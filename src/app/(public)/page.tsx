@@ -1,7 +1,7 @@
-import WelcomeSection from '@/app/(public)/components/welcome-section';
 import Grid, { GridItem } from '@/components/layout/grid';
 import { Metadata } from 'next';
-import BelieveSection from '@/app/(public)/components/believe-section';
+import AboutProjects from '@/app/(public)/components/projects-section';
+import ResponsibilitiesSection from '@/app/(public)/components/responsibilities';
 
 export const metadata: Metadata = {
 	description: 'Home page of Qetra.',
@@ -9,12 +9,15 @@ export const metadata: Metadata = {
 
 export default function HomePage() {
 	return (
-		<Grid>
+		<Grid className="gap-10">
+			{/*<GridItem>*/}
+			{/*	<WelcomeSection />*/}
+			{/*</GridItem>*/}
 			<GridItem>
-				<WelcomeSection />
+				<AboutProjects />
 			</GridItem>
 			<GridItem>
-				<BelieveSection />
+				<ResponsibilitiesSection />
 			</GridItem>
 		</Grid>
 	);

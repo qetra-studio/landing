@@ -3,27 +3,11 @@
 @theme {
 	--color-qetra-dark: #070707;
 	--color-dark-base-100: #262626;
-
-	--color-purple-top-right-button: #7e5cac;
+	--color-card-dark: #18181d;
 }
 
 @plugin "daisyui" {
 	themes:
 		light --default,
 		dark --prefersdark;
-}
-
-@utility card {
-	@apply bg-dark-base-100;
-}
-
-.bg-custom-radial-gradient:hover {
-	background-image: radial-gradient(95.07% 95.07% at 107.18% -0.95%, #c086de 0%, #2d296e 71.15%, #262626 100%);
-	backdrop-filter: blur(11px);
-}
-
-@layer utilities {
-	.bg-custom-radial-gradient {
-		background-image: radial-gradient(circle at 90% 10%, #8059aa, #1c1c1c);
-	}
 }
