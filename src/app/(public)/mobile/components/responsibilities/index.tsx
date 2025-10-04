@@ -1,6 +1,6 @@
 import Grid, { GridItem } from '@/components/layout/grid';
 import Image from 'next/image';
-import InfoSection from '@/app/(public)/components/responsibilities/info-section';
+import InfoSection from './info-section';
 
 export default function ResponsibilitiesSection() {
 	return (

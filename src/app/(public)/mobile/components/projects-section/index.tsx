@@ -1,8 +1,8 @@
 import Grid, { GridItem } from '@/components/layout/grid';
 import Link from 'next/link';
-import CaseStudiesSection from '@/app/(public)/components/projects-section/case-studies-section';
-import LastProjectSection from '@/app/(public)/components/projects-section/last-project-section';
-import ProjectsInfoSection from '@/app/(public)/components/projects-section/info-section';
+import CaseStudiesSection from './case-studies-section';
+import LastProjectSection from './last-project-section';
+import ProjectsInfoSection from './info-section';
 
 export default function AboutProjects() {
 	return (

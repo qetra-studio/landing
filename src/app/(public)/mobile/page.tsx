@@ -1,7 +1,7 @@
 import Grid, { GridItem } from '@/components/layout/grid';
 import { Metadata } from 'next';
-import AboutProjects from '@/app/(public)/components/projects-section';
-import ResponsibilitiesSection from '@/app/(public)/components/responsibilities';
+import AboutProjects from './components/projects-section';
+import ResponsibilitiesSection from './components/responsibilities';
 
 export const metadata: Metadata = {
 	description: 'Home page of Qetra.',
